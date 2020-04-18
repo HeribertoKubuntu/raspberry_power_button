@@ -18,6 +18,8 @@ Permisos para ejecutar script
 
 Ejecutar Script `./uninstall`
 
+> [Descarga de scripts aquí](https://github.com/HeribertoKubuntu/raspberry_power_button/archive/master.zip)
+
 ## Instalación de Botón
 
 > Será necesario ubicar los pines **5 y 6** de el sistema de Entradas/Salidas de la Raspberry para poder conectarlos a nuestro botón de push.
