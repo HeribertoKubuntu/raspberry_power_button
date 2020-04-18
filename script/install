@@ -1,0 +1,20 @@
+#! /bin/sh
+
+set -e
+
+cd "$(dirname "$0")"
+
+echo -e "=> \e[1;4mInstalacion de código...\n"
+sudo cp listen-for-shutdown.py /usr/local/bin/
+sudo chmod +x /usr/local/bin/listen-for-shutdown.py
+
+echo -e "=> \e[1;4mAgregando servicio en el equipo...\n"
+sudo cp listen-for-shutdown.sh /etc/init.d/
+sudo chmod +x /etc/init.d/listen-for-shutdown.sh
+
+sudo update-rc.d listen-for-shutdown.sh defaults
+sudo /etc/init.d/listen-for-shutdown.sh start
+
+echo -e "=> \e[1;4mFinalizando Instalacion...\n"
+echo -e "\e[1;32mInstalacion Finalizada, presiona ctrl+c para detener esta ventana.\n"
+echo -e "\e[1;33mCopyright \e[1;5;33mHeriberto Delgado 2020\n"

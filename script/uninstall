@@ -1,0 +1,16 @@
+#! /bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+echo -e "=> \e[1;4mDeteniendo Servicio...\n"
+sudo update-rc.d listen-for-shutdown.sh remove
+sudo /etc/init.d/listen-for-shutdown.sh stop
+
+echo -e "=> \e[1;4mEliminando Servicio...\n"
+sudo rm -rf /usr/local/bin/listen-for-shutdown.py 
+sudo rm -rf /etc/init.d/listen-for-shutdown.sh 
+
+echo -e "=> \e[1;31mEl codigo ha sido eliminado correctamente.\n"
+echo -e "\e[1;33mCopyright \e[1;5;33mHeriberto Delgado 2020\n"
