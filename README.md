@@ -5,5 +5,5 @@ Los scripts se encuentran el repositorio y se pueden instalar de manera Manual o
 
 Permisos para ejecutar script
 `sudo chmod +x install`
-Ejecutar Script
-./install
+
+Ejecutar Script `./install`
