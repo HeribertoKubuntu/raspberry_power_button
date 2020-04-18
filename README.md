@@ -4,8 +4,6 @@
 
 ## Código
 
-<hr>
-
 > Con este código indicaremos a nuestra Raspberry que, serán utilizados los pines **5 y 6** de el sistema de Entradas/Salidas.
 
 ### Instalación
@@ -21,8 +19,6 @@ Permisos para ejecutar script
 Ejecutar Script `./uninstall`
 
 ## Instalación de Botón
-
-<hr>
 
 > Será necesario ubicar los pines **5 y 6** de el sistema de Entradas/Salidas de la Raspberry para poder conectarlos a nuestro botón de push.
 
